@@ -1,0 +1,36 @@
+### register
+POST  http://localhost:1111/api/v1/auth/register
+
+{
+    "email" : "admin@gmail.com",
+    "password" : "123",
+}
+
+### login
+POST  http://localhost:1111/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email" : "admin3@gmail.com",
+    "password" : "123"
+}
+
+### permission
+POST  http://localhost:1111/api/v1/permissions
+Content-Type: application/json
+
+{
+    "name" : "edit-user",
+}
+
+### role
+POST  http://localhost:1111/api/v1/roles
+Content-Type: application/json
+
+{
+    "type" : "edit-user",
+}
+
+
+
+
